@@ -79,14 +79,20 @@ p {
   /* Media query for smaller screens (mobile devices) */
 @media (max-width: 768px) {
     header h1 {
-      font-size: 1.5em; /* Adjust font size for smaller screens */
+      font-size: 2.5em; /* Adjust font size for smaller screens */
     }
-  
+
+    main {
+        width: 80%;
+        margin: 20px auto;
+        padding-top: 160px;
+      }
+
     h2 {
-      font-size: 1.2em; /* Adjust font size for headings on smaller screens */
+      font-size: 2em; /* Adjust font size for headings on smaller screens */
     }
   
     p {
-      font-size: 1.1em; /* Adjust font size for paragraphs on smaller screens */
+      font-size: 1.6em; /* Adjust font size for paragraphs on smaller screens */
     }
   }
