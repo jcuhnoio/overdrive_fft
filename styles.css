@@ -15,9 +15,14 @@ body {
 }
 
 header {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -29,17 +34,11 @@ header h1 {
 main {
   width: 80%;
   margin: 20px auto;
-}
-
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 140px;
 }
 
 h2 {
+  padding-top: 10px;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -47,3 +46,31 @@ h2 {
 p {
   margin-bottom: 10px;
 }
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
