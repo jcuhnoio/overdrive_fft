@@ -10,15 +10,15 @@
     <nav class="navbar">
     <h1>Overdrive shootout with FFT</h1>
       <ul>
-        <li><a href="#section1">Introduction</a></li>
-        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section1">Value</a></li>
+        <li><a href="#section2">Motion Model</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="section1" class="content">
-      <h2>Introduction</h2>
+      <h2>Value</h2>
       <p>Guitar players use a myriad of effects on their guitar signal in order to enhance and alter their tone to get the sound they exactly want. There is one particular style of effects that guitarists obsess over - the overdrive. The overdrive effect distorts a guitar signal in such a way that sounds - for lack of a better term - more rock’n’roll. The reason behind this obsession which becomes expensive very quickly, is that there are so many different types of overdrives out there with slightly varying sounds. This sparks heated discussions among guitarists on which overdrive is ‘the best’. </p>
       <p>Distortion works by amplifying the input gain (digitally or in analog) of a sampled waveform. When pushed beyond its intended limits, the peaks of a clean (undistorted) guitar signal will be heavily compressed: this is called “clipping”.  On a time domain, this can look like the peaks of the sampled waveform being flattened. Depending on how aggressive the clipping is (soft, hard, square-wave), this can have different implications on how the tone sounds. Notably, different overdrive circuits also exhibit different frequency responses; the famous “Tube Screamer” circuit features a boost of mid-frequencies (~700-1,000 Hz), while “transparent” overdrives like the Klon maintain a balanced frequency range. In this project, we will investigate the characteristics of each overdrive circuit’s clipping style, frequency response, and audible quality of tone to answer the question: Why do guitarists care so much? (and by extension, does it matter enough to sink hundreds or thousands of dollars into harnessing all these subtleties?<sup>[1]</sup>)
     </p>
@@ -28,9 +28,22 @@
     </section>
 
     <section id="section2" class="content">
-      <h2>Section 2</h2>
-      <p>Curabitur aliquet arcu vel nulla dignissim, quis venenatis leo tincidunt. Duis consequat urna a augue vestibulum fermentum.</p>
-      <p>Nam bibendum odio in consectetur congue. In hac habitasse platea dictumst. Sed sollicitudin semper turpis, nec vestibulum lectus fermentum vel.</p>
+      <h2>Motion Model</h2>
+      <p>At the most basic level, the motion that is involved in the guitar is the vibration of strings. The motion of vibrating strings on a guitar is a fundamental aspect of how sound is produced on this instrument. When a guitar string is plucked or strummed, it creates vibrations that the pickups in the guitar react to, which is trasmitted as a signal, then is altered and amplified by effects and amplifiers.
+      </p>
+      <ul>
+        <li>Plucking the String: When a guitarist plucks a string, it sets the string in motion. The string moves away from its resting position and then returns, causing a back-and-forth motion. This movement generates waves along the length of the string.</li>
+        <li>Frequency and Pitch: The frequency of these waves determines the pitch of the note produced. A higher frequency creates a higher pitch, while a lower frequency generates a lower pitch. The length and tension of the string affect its frequency of vibration.</li>
+        <li>Nodes and Antinodes: As the string vibrates, it forms specific points where the string remains still called nodes, and points where the string moves the most called antinodes. These points are responsible for the creation of different harmonics and overtones, which contribute to the complex timbre of the sound.</li>
+        <li>Harmonics: When a string vibrates, it doesn’t just produce a single frequency. It creates multiple frequencies simultaneously, known as harmonics. The first harmonic (also called the fundamental frequency) is the dominant frequency that determines the note played. Higher harmonics are multiples of this fundamental frequency and contribute to the richness of the sound.</li>
+        <li>Magnetic Pickups: Electric guitars have pickups—coils of wire wrapped around magnets. When the strings vibrate, they disturb the magnetic field around the pickups, inducing a small electrical current in the coils. Each string has its own pickup or set of pickups dedicated to capturing its vibrations.</li>
+      </ul>
+      <p>
+      </p>
+      <div style="text-align: center;">
+        <img src="signal_diagram.png" alt="Diagram of signal" width="700px">
+      </div>
+      
     </section>
   </main>
 

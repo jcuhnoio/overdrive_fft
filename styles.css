@@ -8,10 +8,12 @@ p {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
@@ -98,5 +100,13 @@ p {
   
     p {
       font-size: 2.5em; /* Adjust font size for paragraphs on smaller screens */
+    }
+
+    ol.d {
+      font-size: 5em;
+    }
+
+    ol.c {
+      font-size: 5em;
     }
   }
