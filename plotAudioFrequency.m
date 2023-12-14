@@ -13,10 +13,13 @@ function plotAudioFrequency(sample)
     % Shift the spectrum
     shiftSpectrum = fftshift(ydft);
 
+    % Prepare the title with escaped underscores
+    sampleTitle = strrep(sample, '_', '\_');
+
     % Plot magnitude in frequency domain
     figure; 
     plot(freq, abs(shiftSpectrum)); 
-    title(sample)
+    title(sampleTitle)
     subtitle(['Magnitude over Frequency Domain']); 
     xlabel('Hz'); 
     ylabel('Magnitude'); 
@@ -29,7 +32,7 @@ function plotAudioFrequency(sample)
     % Plot phase in frequency domain
     figure; 
     plot(freq, unwrap(angle(shiftSpectrum))); 
-    title(sample)
+    title(sampleTitle)
     subtitle(['Phase over Frequency Domain']); 
     xlabel('Hz'); 
     ylabel('Phase'); 
