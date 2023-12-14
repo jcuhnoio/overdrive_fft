@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "wavesurfer.js": "^7.5.2"
   }
